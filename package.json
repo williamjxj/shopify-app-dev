@@ -2,6 +2,7 @@
   "name": "wjiangstore4sale-app",
   "private": true,
   "scripts": {
+    "info": "shopify app info",
     "build": "remix vite:build",
     "dev": "shopify app dev",
     "config:link": "shopify app config link",
@@ -33,6 +34,8 @@
     "@shopify/polaris": "^12.0.0",
     "@shopify/shopify-app-remix": "^3.7.0",
     "@shopify/shopify-app-session-storage-prisma": "^6.0.0",
+    "@supabase/supabase-js": "^2.49.4",
+    "exit": "^0.1.2",
     "isbot": "^5.1.0",
     "prisma": "^6.2.1",
     "react": "^18.2.0",
