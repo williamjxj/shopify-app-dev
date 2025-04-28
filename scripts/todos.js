@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// node --no-deprecation scripts/supabase.js
 
 import { createClient } from '@supabase/supabase-js'
 import dotenv from 'dotenv'
@@ -7,7 +6,7 @@ import dotenv from 'dotenv'
 dotenv.config({ path: '.env.local' })
 
 process.noDeprecation = true
-const { SUPABASE_KEY: supabaseKey, SUPABASE_URL: supabaseUrl } = process.env
+const { SUPABASE_ANON_KEY: supabaseKey, SUPABASE_URL: supabaseUrl } = process.env
 
 if (!supabaseKey || !supabaseUrl) {
     throw new Error('Missing Supabase credentials')
